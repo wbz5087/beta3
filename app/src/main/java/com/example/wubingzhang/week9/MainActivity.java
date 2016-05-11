@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.wubingzhang.week9.account.account;
+import com.example.wubingzhang.week9.accounts.AccountsActivity;
 import com.example.wubingzhang.week9.alarm.ClockListActivity;
 import com.example.wubingzhang.week9.alarm.HelloActivity;
 
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.account:
-                intent = new Intent(this, account.class);
+                intent = new Intent(this, AccountsActivity.class);
                 startActivity(intent);
                 break;
         }
