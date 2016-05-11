@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.wubingzhang.week9">
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,11 +24,7 @@
                 android:name=".alarm.AddAlarmActivity"
                 android:label="@string/title_activity_set"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-            <activity
-                android:name=".alarm.SettingActivity"
-                android:label="@string/title_activity_setting"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-            <activity
+        <activity
                 android:name=".alarm.PlayAlarmActivity"
                 android:screenOrientation="portrait"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -87,6 +84,21 @@
 
         <activity android:name=".account.viewAnalysis"
             android:label="analysis"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".accounts.AccountsActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".accounts.AddActivity"
+            android:label="@string/title_activity_add"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".accounts.SummaryActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".accounts.ExpenseCatalogueActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".accounts.IncomeCatalogueActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".accounts.DetailActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
